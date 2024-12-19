@@ -60,7 +60,7 @@
 
 <div data-aos="fade-up"
      data-aos-anchor-placement="bottom-bottom">
-<button onclick="vibr()" class="onevib">10s</button>
+<button onclick="vibr()" class="onevib">3s</button>
 </div>
 
 <br/>
@@ -69,7 +69,7 @@
 
 <div data-aos="fade-up"
      data-aos-anchor-placement="bottom-bottom">
-<button onclick="navigator.vibrate(30000);" class="onevib">30s</button>
+<button onclick="vibrr()" class="onevib">5s</button>
 </div>
 
 
@@ -79,7 +79,7 @@
 
 <div data-aos="fade-up"
      data-aos-anchor-placement="bottom-bottom">
-<button onclick="navigator.vibrate(60000);" class="onevib">60s</button>
+<button onclick="vibrrr()" class="onevib">8s</button>
 </div>
 
 <br/>
@@ -88,7 +88,7 @@
 
 <div data-aos="fade-up"
      data-aos-anchor-placement="bottom-bottom">
-<button onclick="navigator.vibrate(130000);" class="onevib">130s</button>
+<button onclick="vibrrrr()" class="onevib">10s</button>
 </div>
 
 <br/>
@@ -105,11 +105,37 @@
 <script>
   function vibr() {
     if (navigator.vibrate) {
-      navigator.vibrate(5000);
+      navigator.vibrate(3000);
     } else {
-      alert("La vibration n'est pas prise en charge sur cet appareil.");
+      alert("La vibration n'est pas dispo sur ton tel.");
     }
   }
+
+function vibrr() {
+    if (navigator.vibrate) {
+      navigator.vibrate(5000);
+    } else {
+      alert("La vibration n'est pas dispo sur ton tel.");
+    }
+  }
+
+    function vibrrr() {
+    if (navigator.vibrate) {
+      navigator.vibrate(8000);
+    } else {
+      alert("La vibration n'est pas dispo sur ton tel.");
+    }
+  }
+
+
+    function vibrrrr() {
+    if (navigator.vibrate) {
+      navigator.vibrate(10000);
+    } else {
+      alert("La vibration n'est pas dispo sur ton tel.");
+    }
+  }
+    
 </script>
 
     
